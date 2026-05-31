@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="id">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,15 +10,64 @@
 
 <body class="bg-yellow-50 text-gray-900">
 
-  <header>
-    <!-- Navbar -->
+  <header class="bg-white shadow-sm">
+    <nav class="mx-auto flex max-w-6xl items-center justify-between px-4 py-4">
+
+      <a href="#" class="text-xl font-bold text-yellow-600">
+        Ehem Pisang
+      </a>
+
+      <button id="menuButton" class="rounded-lg border px-3 py-2 md:hidden">
+        Menu
+      </button>
+
+      <div class="hidden gap-6 font-medium md:flex">
+        <a href="#produk" class="hover:text-yellow-600">Menu</a>
+        <a href="#tentang" class="hover:text-yellow-600">Tentang</a>
+        <a href="#kontak" class="hover:text-yellow-600">Kontak</a>
+      </div>
+
+    </nav>
+
+    <div id="mobileMenu" class="hidden border-t bg-white px-4 pb-4 md:hidden">
+      <a href="#produk" class="block py-2">Menu</a>
+      <a href="#tentang" class="block py-2">Tentang</a>
+      <a href="#kontak" class="block py-2">Kontak</a>
+    </div>
   </header>
 
   <main>
-    <!-- Hero -->
-    <!-- Produk -->
-    <!-- Tentang -->
-    <!-- Kontak -->
+    <section class="mx-auto grid max-w-6xl gap-8 px-4 py-16 md:grid-cols-2 md:items-center">
+
+      <div>
+        <p class="mb-3 font-semibold text-yellow-600">
+          Fresh setiap hari
+        </p>
+
+        <h1 class="text-4xl font-bold leading-tight md:text-5xl">
+          Olahan Pisang Lezat untuk Teman Ngopi Kamu
+        </h1>
+
+        <p class="mt-4 text-gray-600">
+          Nikmati pisang nugget, pisang crispy, dan keripik pisang dengan rasa premium dan harga ramah kantong.
+        </p>
+
+        <div class="mt-6 flex flex-col gap-3 sm:flex-row">
+          <a href="#produk" class="rounded-xl bg-yellow-400 px-5 py-3 text-center font-semibold">
+            Lihat Menu
+          </a>
+
+          <a href="#kontak" class="rounded-xl border px-5 py-3 text-center font-semibold">
+            Pesan Sekarang
+          </a>
+        </div>
+      </div>
+
+      <div class="rounded-3xl bg-yellow-200 p-4">
+        <img src="/images/hero-pisang.jpg" alt="Produk pisang" class="h-72 w-full rounded-2xl object-cover md:h-96">
+      </div>
+
+    </section>
   </main>
 
   <footer>
@@ -26,4 +76,5 @@
 
   <script type="module" src="/src/main.js"></script>
 </body>
+
 </html>
